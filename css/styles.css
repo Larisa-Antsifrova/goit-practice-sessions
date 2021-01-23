@@ -1,0 +1,91 @@
+h1 {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border: 2px solid black;
+  transition: 250ms background-color;
+  min-width: 75px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled:hover {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#progress-bar {
+  display: flex;
+  width: 350px;
+  margin-right: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+ul {
+  list-style: none;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-value {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  transition: 500ms background-color;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-value.complete {
+  background-color: black;
+  color: white;
+}
+
+.step-value.complete:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 50px;
+  height: 2px;
+  right: -55px;
+  bottom: 15px;
+}
+
+/* .main {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+.buttons-wrap {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-title {
+  display: block;
+  text-align: center;
+}
